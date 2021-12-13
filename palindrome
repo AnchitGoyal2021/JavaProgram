@@ -1,0 +1,34 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+    int p=x,r=0,m;
+      boolean t=false;
+       if(x>=0)
+       {
+        while(p>0) 
+       {
+           m= p % 10;
+        r=r * 10 + m;
+        p=p/10;
+       }
+         if(r==x)
+        {
+            t=true;
+            System.out.println(r +"numer is palindrom");
+        }
+        else
+        {
+            System.out.println( r+ "numner is not palirdam");
+        }1
+       }
+        else
+        {
+         System.out.println( r+ "numner is not palirdam");
+        }   
+        
+        
+     return  t ;
+    }
+}
+    
+    
+    
